@@ -1,0 +1,12 @@
+para cada posicao i na area de colisao
+  se chave[i] nao estiver vazia:
+    h = hash(chave[i])
+    p = h
+    enquanto next[p] !=NULL:
+      p = next[p]
+
+    j = primeira posicao vazia na tabela principal
+    j = i
+    next[p] = j
+    next[j] = NULL
+    apagar registro i

@@ -1,0 +1,21 @@
+TABLESIZE=11
+
+maior= -1
+posicaoMaior = -1
+
+for(i=0;i<TABLESIZE-1;i++){
+    atual = hashtable[i] // aqui tem uma struct e o no tem o formato chave, valor e prox sendo  offset do arquivo
+    tamanho =0
+
+    while(atual != -1){
+        tamanho++
+        atual = fp[atual].prox
+      }
+    if tamanho>maior{
+        maior = tamanho
+        posicaoMaior = maior
+    }
+  }
+
+  printf(posicaoMaior)
+  printf(maior)
